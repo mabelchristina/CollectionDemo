@@ -14,8 +14,8 @@ namespace CollectionDemo
             names.Add("Leon");
             names.Add("Layla");
             names.Add("Love");
-            names.Insert(2, "kavitha");
-            Console.WriteLine("Checking if the element is present or not" + names.Contains("sravani"));
+            names.Insert(2, "Lizzie");
+            Console.WriteLine("Checking if the element is present or not" + names.Contains("Layla"));
             Console.WriteLine("count numer of elements in list:" + names.Count);
             Console.WriteLine("Printing list of elements");
             foreach (string name in names)
@@ -24,7 +24,7 @@ namespace CollectionDemo
             Console.WriteLine("Printing the list of elements oafter sorting");
             foreach (string name in names)
                 Console.WriteLine(name);
-            names.Remove("manju");
+            names.Remove("Love");
             Console.WriteLine("counting the list of elements after removing::" + names.Count);
 
 
@@ -47,7 +47,7 @@ namespace CollectionDemo
             Console.WriteLine("total elements present in stack after poping one element" + myStack.Count);
             //printing topmost element in stack
             Console.WriteLine("TopMost present in stack is::" + myStack.Peek());
-            bool reslt = myStack.Contains("Rupika");
+            bool reslt = myStack.Contains("Jose");
             Console.WriteLine("elemnet present in stack::" + reslt);
             //clearing the stack
             myStack.Clear();
@@ -72,7 +72,7 @@ namespace CollectionDemo
             //getting topmost element in queue
             Console.WriteLine("Printng top most element in queue::" + queue.Peek());
             //checking element is present or not in queue
-            Console.WriteLine("Checking element is present or not::" + queue.Contains("sailaja"));
+            Console.WriteLine("Checking element is present or not::" + queue.Contains("Sammy"));
             //clearing all elents in queue
             queue.Clear();
             Console.WriteLine("Total number of elements after clearing the queue::" + queue.Count);
@@ -100,7 +100,7 @@ namespace CollectionDemo
             Console.WriteLine("Counting the Number of elements after removing::" + My_dict.Count);
             var result = My_dict.ContainsKey(2);
             Console.WriteLine("Checking if the key is present or not::" + result);
-            var valueResult = My_dict.ContainsValue("sailaja");
+            var valueResult = My_dict.ContainsValue("Anna");
             Console.WriteLine("Checking if the value is present or not::" + valueResult);
             My_dict.Clear();
             Console.WriteLine("Counting the Number of elements after clearing the dictionary::" + My_dict.Count);
